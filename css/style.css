@@ -52,24 +52,6 @@ a { color: inherit; text-decoration: none; }
   gap: 2rem;
 }
 
-.nav-logo {
-  display: flex;
-  align-items: center;
-  gap: .6rem;
-  font-size: .9rem;
-  font-weight: 600;
-  color: var(--text);
-  white-space: nowrap;
-}
-
-.nav-logo-mark {
-  width: 10px; height: 10px;
-  border-radius: 2px;
-  background: var(--burgundy-l);
-  display: inline-block;
-  flex-shrink: 0;
-}
-
 /* Tab buttons */
 .nav-tabs {
   display: flex;
