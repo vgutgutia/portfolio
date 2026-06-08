@@ -6,7 +6,7 @@
   <title>Projects - SPB AI &amp; Data Science Club</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css?v=3" />
 </head>
 <body>
 
@@ -50,9 +50,6 @@
             <a href="https://github.com/SPB-AI-Data-Science-Club/chess-bot" target="_blank" class="action-btn action-primary">
               View on GitHub
             </a>
-            <button class="action-btn action-secondary" onclick="copyClone('chess-bot')">
-              Copy Clone Command
-            </button>
           </div>
         </article>
 
@@ -73,9 +70,6 @@
             <a href="https://github.com/SPB-AI-Data-Science-Club/neural-net-visualizer" target="_blank" class="action-btn action-primary">
               View on GitHub
             </a>
-            <button class="action-btn action-secondary" onclick="copyClone('neural-net-visualizer')">
-              Copy Clone Command
-            </button>
           </div>
         </article>
 
@@ -96,9 +90,6 @@
             <a href="https://github.com/SPB-AI-Data-Science-Club/sentiment-analyzer" target="_blank" class="action-btn action-primary">
               View on GitHub
             </a>
-            <button class="action-btn action-secondary" onclick="copyClone('sentiment-analyzer')">
-              Copy Clone Command
-            </button>
           </div>
         </article>
 
@@ -119,17 +110,12 @@
             <a href="https://github.com/SPB-AI-Data-Science-Club/image-classifier" target="_blank" class="action-btn action-primary">
               View on GitHub
             </a>
-            <button class="action-btn action-secondary" onclick="copyClone('image-classifier')">
-              Copy Clone Command
-            </button>
           </div>
         </article>
 
       </div>
     </div>
   </div>
-
-  <div class="toast" id="toast"></div>
 
   <footer class="footer">
     <div class="footer-inner">
@@ -142,19 +128,6 @@
       </a>
     </div>
   </footer>
-
-  <script>
-    function copyClone(repo) {
-      const cmd = 'git clone https://github.com/SPB-AI-Data-Science-Club/' + repo + '.git';
-      navigator.clipboard.writeText(cmd).then(function() { showToast('Clone command copied'); });
-    }
-    function showToast(msg) {
-      var t = document.getElementById('toast');
-      t.textContent = msg;
-      t.classList.add('show');
-      setTimeout(function() { t.classList.remove('show'); }, 2200);
-    }
-  </script>
 
 </body>
 </html>
